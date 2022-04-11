@@ -108,7 +108,7 @@ class Play extends Phaser.Scene {
     }
 
     shipExplode(ship) {
-        //Animation
+
         ship.alpha = 0;                         
         let boom = this.add.sprite(ship.x, ship.y, 'explosion').setOrigin(0, 0);
         boom.anims.play('explode');             // play explode animation
